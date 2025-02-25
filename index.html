@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Mission</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="terminal">
+        <h1>🎮 MVP BIRTHDAY MISSION 🎮</h1>
+        <p>Welcome, <span id="username">Cipher</span>! 🎂</p>
+        <p>Enter the secret passcode to begin your mission.</p>
+        <p>Hint: The secret passcode is your nickname🤗💖.</p>
+        <input type="text" id="passcode" placeholder="Enter passcode...">
+        <button onclick="checkPasscode()">Start Mission</button>
+        <p id="error" class="hidden">❌ Incorrect passcode. Try again!</p>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

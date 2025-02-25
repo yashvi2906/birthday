@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Challenge</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <h1>🎯 Birthday Challenge 🎯</h1>
+    <p>Solve the puzzles to unlock your birthday surprise!</p>
+    
+    <div class="question">
+        <p>Sabse romantic cheez jo tune mere liye ki hai? 🥰 </p>
+
+<p>(A) Mera gussa shaant karna 😏<br>
+(B) Mujhe bina wajah call karke "bas aise hi yaad aayi" bolna 😍<br>
+(C) Jab bhi zaroorat ho, bas ek hug me sab thik kar dena! 🥹<br>
+(D) Jab tu apne plans hote huye bhi mere saath waqt bitata hai 😍<br>
+(E) Jab main bina bole kuch chahiye hoti hoon aur tu samajh jata hai! 💖<br>
+(F) Jab tu bina kisi wajah ke mujhe cute names se bulata hai 😘<br>
+(G) Jab tu mujhe surprise dekar meri aankhon me wo shiny happy wala look le aata hai! ✨🥰<br>
+(H) Yeh sabhi, aur isliye tu best hai! 😘<br>
+        </p>
+        <input type="text" id="answer1" placeholder="Your Answer...">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="feedback" class="hidden">✅ Correct! Proceed to the next level.</p>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            let ans = document.getElementById("answer1").value.toLowerCase();
+            if (ans === "h") {
+                document.getElementById("feedback").classList.remove("hidden");
+                setTimeout(() => {
+                    window.location.href = "success.html"; // Move to gift page
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>
